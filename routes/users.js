@@ -10,7 +10,7 @@ const Users = require('../models/users');
 const UsersBL = require('../bl/users');
 
 // Endpoints
-Users.methods([]);
+Users.methods(['get']); // added openning for exercise testing porpuses 
 
 // Routes
 Users.route('register', ['post'], UsersBL.register);
