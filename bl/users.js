@@ -61,7 +61,7 @@ const register = (req, res) => {
 
             // Create and save token
             user.token = jwt.sign(tokenData, config.SECRET, {
-                expiresIn: '1h'
+                expiresIn: '8000h' 
             });
             user.save();
 
